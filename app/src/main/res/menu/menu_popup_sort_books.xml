@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_popup_sort_last"
+        android:title="@string/action_popup_sort_last"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_popup_sort_alpha"
+        android:title="@string/action_popup_sort_alpha"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_popup_sort_unread"
+        android:title="@string/action_popup_sort_unread"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_popup_sort_reading"
+        android:title="@string/action_popup_sort_reading"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_popup_sort_readed"
+        android:title="@string/action_popup_sort_readed"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_popup_sort_favs"
+        android:title="@string/action_popup_sort_favs"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_popup_sort_rated"
+        android:title="@string/action_popup_sort_rated"
+        app:showAsAction="ifRoom" />
+
+</menu>

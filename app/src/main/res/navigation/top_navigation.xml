@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.hitglynorthz.mybookshelf.ui.toplevels.HomeFragment"
+        android:label="@string/bnav_books"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/nav_wishlist"
+        android:name="com.hitglynorthz.mybookshelf.ui.toplevels.WishlistFragment"
+        android:label="@string/nav_wishlist"
+        tools:layout="@layout/fragment_wishlist" />
+    <fragment
+        android:id="@+id/nav_genres"
+        android:name="com.hitglynorthz.mybookshelf.ui.toplevels.GenresFragment"
+        android:label="@string/nav_genres"
+        tools:layout="@layout/fragment_genres"/>
+    <fragment
+        android:id="@+id/nav_stats"
+        android:name="com.hitglynorthz.mybookshelf.ui.toplevels.StatsFragment"
+        android:label="@string/nav_stats"
+        tools:layout="@layout/fragment_stats" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.hitglynorthz.mybookshelf.ui.toplevels.SettingsFragment"
+        android:label="@string/nav_settings" />
+    <fragment
+        android:id="@+id/nav_details"
+        android:name="com.hitglynorthz.mybookshelf.ui.details.Fragment_Details"
+        tools:layout="@layout/fragment_details"/>
+    <fragment
+        android:id="@+id/nav_add_book"
+        android:name="com.hitglynorthz.mybookshelf.ui.crud.Fragment_AddBook"
+        android:label="@string/nav_add_book"
+        tools:layout="@layout/fragment_add_book" />
+    <fragment
+        android:id="@+id/nav_more"
+        android:name="com.hitglynorthz.mybookshelf.ui.details.Fragment_More"
+        tools:layout="@layout/fragment_more"/>
+    <fragment
+        android:id="@+id/nav_edit_shelves"
+        android:name="com.hitglynorthz.mybookshelf.ui.crud.Fragment_EditShelves"
+        android:label="Fragment_EditShelves"
+        tools:layout="@layout/fragment_edit_shelves"/>
+    <fragment
+        android:id="@+id/nav_add_shelves"
+        android:name="com.hitglynorthz.mybookshelf.ui.crud.Fragment_AddShelves"
+        android:label="@string/nav_add_shelves_title"
+        tools:layout="@layout/fragment_add_shelves"/>
+    <fragment
+        android:id="@+id/nav_edit_book"
+        android:name="com.hitglynorthz.mybookshelf.ui.crud.Fragment_EditBook"
+        android:label="@string/nav_edit_book"
+        tools:layout="@layout/fragment_edit_book"/>
+    <fragment
+        android:id="@+id/nav_add_wishlist"
+        android:name="com.hitglynorthz.mybookshelf.ui.crud.Fragment_AddWishlist"
+        android:label="@string/nav_add_wishlist"
+        tools:layout="@layout/fragment_add_wishlist"/>
+
+    <action
+        android:id="@+id/action_global_nav_wishlist"
+        app:destination="@id/nav_wishlist" />
+    <action
+        android:id="@+id/action_global_nav_home"
+        app:destination="@id/nav_home" />
+    <action
+        android:id="@+id/action_global_nav_details"
+        app:destination="@id/nav_details"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        app:popEnterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out" />
+    <action
+        android:id="@+id/action_global_nav_add_book"
+        app:destination="@id/nav_add_book"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+    <action
+        android:id="@+id/action_global_nav_more"
+        app:destination="@id/nav_more"
+        app:enterAnim="@anim/fragment_open_enter"
+        app:exitAnim="@anim/fragment_open_exit"
+        app:popEnterAnim="@anim/fragment_close_enter"
+        app:popExitAnim="@anim/fragment_close_exit" />
+    <action
+        android:id="@+id/action_global_nav_edit_shelves"
+        app:destination="@id/nav_edit_shelves"
+        app:enterAnim="@anim/fragment_open_enter"
+        app:exitAnim="@anim/fragment_open_exit"
+        app:popEnterAnim="@anim/fragment_close_enter"
+        app:popExitAnim="@anim/fragment_close_exit" />
+    <action
+        android:id="@+id/action_global_nav_add_shelves"
+        app:destination="@id/nav_add_shelves"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+    <action
+        android:id="@+id/action_global_nav_edit_book"
+        app:destination="@id/nav_edit_book"
+        app:enterAnim="@anim/fragment_open_enter"
+        app:exitAnim="@anim/fragment_open_exit"
+        app:popEnterAnim="@anim/fragment_close_enter"
+        app:popExitAnim="@anim/fragment_close_exit" />
+    <action
+        android:id="@+id/action_global_nav_add_wishlist"
+        app:destination="@id/nav_add_wishlist"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+</navigation>

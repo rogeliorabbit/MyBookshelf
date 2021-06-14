@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/test"
+    app:startDestination="@id/splashActivity">
+
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.hitglynorthz.mybookshelf.SplashActivity"
+        android:label="SplashActivity"
+        tools:layout="@layout/activity_splash">
+        <action
+            android:id="@+id/action_splashActivity_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </activity>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.hitglynorthz.mybookshelf.MainActivity"
+        android:label="app_bar_main"
+        tools:layout="@layout/app_bar_main" >
+        <action
+            android:id="@+id/action_mainActivity_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_mainActivity_to_wishlistFragment"
+            app:destination="@id/wishlistFragment" />
+        <action
+            android:id="@+id/action_mainActivity_to_genresFragment"
+            app:destination="@id/genresFragment" />
+        <action
+            android:id="@+id/action_mainActivity_to_statsFragment"
+            app:destination="@id/statsFragment" />
+        <action
+            android:id="@+id/action_mainActivity_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </activity>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.hitglynorthz.mybookshelf.ui.toplevels.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_fragment_Books"
+            app:destination="@id/fragment_Books" />
+        <action
+            android:id="@+id/action_homeFragment_to_fragment_Authors"
+            app:destination="@id/fragment_Authors" />
+        <action
+            android:id="@+id/action_homeFragment_to_fragment_Publishers"
+            app:destination="@id/fragment_Publishers" />
+        <action
+            android:id="@+id/action_homeFragment_to_fragment_Shelves"
+            app:destination="@id/fragment_Shelves" />
+    </fragment>
+    <fragment
+        android:id="@+id/wishlistFragment"
+        android:name="com.hitglynorthz.mybookshelf.ui.toplevels.WishlistFragment"
+        android:label="WishlistFragment"
+        tools:layout="@layout/fragment_wishlist"/>
+    <fragment
+        android:id="@+id/genresFragment"
+        android:name="com.hitglynorthz.mybookshelf.ui.toplevels.GenresFragment"
+        android:label="GenresFragment"
+        tools:layout="@layout/fragment_genres"/>
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="com.hitglynorthz.mybookshelf.ui.toplevels.StatsFragment"
+        android:label="StatsFragment"
+        tools:layout="@layout/fragment_stats"/>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.hitglynorthz.mybookshelf.ui.toplevels.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/fragment_Books"
+        android:name="com.hitglynorthz.mybookshelf.ui.bottomlevels.Fragment_Books"
+        android:label="Fragment_Books"
+        tools:layout="@layout/fragment_books">
+        <action
+            android:id="@+id/action_fragment_Books_to_fragment_Details"
+            app:destination="@id/fragment_Details" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Authors"
+        android:name="com.hitglynorthz.mybookshelf.ui.bottomlevels.Fragment_Authors"
+        android:label="Fragment_Authors"
+        tools:layout="@layout/fragment_authors">
+        <action
+            android:id="@+id/action_fragment_Authors_to_fragment_More"
+            app:destination="@id/fragment_More" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Publishers"
+        android:name="com.hitglynorthz.mybookshelf.ui.bottomlevels.Fragment_Publishers"
+        android:label="Fragment_Publishers"
+        tools:layout="@layout/fragment_publishers">
+        <action
+            android:id="@+id/action_fragment_Publishers_to_fragment_More"
+            app:destination="@id/fragment_More" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Shelves"
+        android:name="com.hitglynorthz.mybookshelf.ui.bottomlevels.Fragment_Shelves"
+        android:label="Fragment_Shelves"
+        tools:layout="@layout/fragment_shelves">
+        <action
+            android:id="@+id/action_fragment_Shelves_to_fragment_More"
+            app:destination="@id/fragment_More" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Details"
+        android:name="com.hitglynorthz.mybookshelf.ui.details.Fragment_Details"
+        android:label="Fragment_Details"
+        tools:layout="@layout/fragment_details"/>
+    <fragment
+        android:id="@+id/fragment_More"
+        android:name="com.hitglynorthz.mybookshelf.ui.details.Fragment_More"
+        android:label="Fragment_More"
+        tools:layout="@layout/fragment_more">
+        <action
+            android:id="@+id/action_fragment_More_to_fragment_Details"
+            app:destination="@id/fragment_Details" />
+    </fragment>
+</navigation>

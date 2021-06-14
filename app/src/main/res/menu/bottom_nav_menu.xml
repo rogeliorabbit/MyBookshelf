@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bnav_books"
+        android:icon="@drawable/ic_book_tint"
+        android:title="@string/bnav_books" />
+
+    <item
+        android:id="@+id/bnav_authors"
+        android:icon="@drawable/ic_author_tint"
+        android:title="@string/bnav_authors" />
+
+    <item
+        android:id="@+id/bnav_publishers"
+        android:icon="@drawable/ic_publishers_tint"
+        android:title="@string/bnav_publishers" />
+
+    <item
+        android:id="@+id/bnav_shelves"
+        android:icon="@drawable/ic_bookcases_tint"
+        android:title="@string/bnav_shelves" />
+
+</menu>

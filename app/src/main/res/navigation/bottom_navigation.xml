@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/bnav_books">
+
+    <fragment
+        android:id="@+id/bnav_books"
+        android:name="com.hitglynorthz.mybookshelf.ui.bottomlevels.Fragment_Books"
+        android:label="BooksFragment"
+        tools:layout="@layout/fragment_books"/>
+    <fragment
+        android:id="@+id/bnav_authors"
+        android:name="com.hitglynorthz.mybookshelf.ui.bottomlevels.Fragment_Authors"
+        android:label="AuthorsFragment"
+        tools:layout="@layout/fragment_authors"/>
+    <fragment
+        android:id="@+id/bnav_publishers"
+        android:name="com.hitglynorthz.mybookshelf.ui.bottomlevels.Fragment_Publishers"
+        android:label="PublishersFragments"
+        tools:layout="@layout/fragment_publishers"/>
+    <fragment
+        android:id="@+id/bnav_shelves"
+        android:name="com.hitglynorthz.mybookshelf.ui.bottomlevels.Fragment_Shelves"
+        android:label="BookcasesFragment"
+        tools:layout="@layout/fragment_shelves"/>
+</navigation>

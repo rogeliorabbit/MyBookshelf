@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1d1e22</color>
+    <color name="colorPrimaryVariant">#191919</color>
+    <color name="colorPrimaryDark">#b31d1e22</color>
+    <color name="colorOnPrimary">#ffffff</color>
+    <color name="colorSecondary">#7da9af</color>
+    <color name="colorSecondaryVariant">#64878c</color>
+    <color name="colorOnSecondary">#ffffff</color>
+    <color name="colorError">#cf6679</color>
+    <color name="colorOnError">#000000</color>
+    <color name="colorSurface">#2a2b2f</color>
+    <color name="colorOnSurface">#ffffff</color>
+    <color name="colorBackground">#212226</color>
+    <color name="colorOnBackground">#ffffffff</color>
+
+    <color name="colorDivider">#1fffffff</color>
+    <color name="colorSelection">#7da9af</color>
+    <color name="colorSecondarySelection">#344955</color>
+    <color name="colorSecondaryLight">#cbdcdf</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorPink">#F48FB1</color>
+
+    <color name="colorTextBookTitle">#DEFFFFFF</color>
+    <color name="colorTextBookAuthor">#DEFFFFFF</color>
+    <color name="colorTextBookPublisher">#99FFFFFF</color>
+
+    <color name="colorMainToolbarIcons">@color/colorWhite</color>
+
+    <color name="colorTextTitle">#DEFFFFFF</color>
+    <color name="colorTextSubtitle">#99FFFFFF</color>
+    <color name="colorTextTitleOnBg">#DEFFFFFF</color>
+    <color name="colorTextSubtitileOnBg">#99FFFFFF</color>
+
+    <color name="colorDefaultChip">#26ffffff</color>
+
+    <color name="colorShelvesBg">#5c7480</color>
+
+    <color name="colorPostit">#ffffb7</color>
+    <color name="colorPostitTitle">#8c6864</color>
+    <color name="colorPostitHint">#ae9592</color>
+
+    <color name="drawerItem">#8e9a9c</color>
+
+    <color name="bottomNavBg">#191919</color>
+
+</resources>

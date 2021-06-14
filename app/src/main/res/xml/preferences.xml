@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/settings_category_1_title">
+        <ListPreference
+            android:key="theme_select"
+            android:title="@string/settings_theme_title"
+            android:summary="@string/settings_theme_subtitle"
+            android:entries="@array/theme_options"
+            android:entryValues="@array/theme_values"
+            android:defaultValue="0"
+            android:icon="@drawable/ic_daynight_tint"/>
+        <SwitchPreferenceCompat
+            android:key="badge_select"
+            android:title="@string/settings_badge_title"
+            android:summary="@string/settings_badge_subtitle1"
+            android:icon="@drawable/ic_help_tint"
+            android:defaultValue="false"/>
+        <SwitchPreferenceCompat
+            android:key="listype_select"
+            android:title="@string/settings_list_title"
+            android:summary="@string/settings_list_subtitle1"
+            android:icon="@drawable/ic_view_list_tint"
+            android:defaultValue="false"/>
+        <SwitchPreferenceCompat
+            android:key="book_select"
+            android:title="@string/settings_small_books_title"
+            android:summary="@string/settings_small_books_subtitle1"
+            android:icon="@drawable/ic_resize_tint"
+            android:defaultValue="false"/>
+        <SwitchPreferenceCompat
+            android:key="shelves_select"
+            android:title="@string/settings_small_shelves_title"
+            android:summary="@string/settings_small_shelves_subtitle1"
+            android:icon="@drawable/ic_resize_tint"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_category_2_title">
+        <ListPreference
+            android:key="isbn_select"
+            android:title="@string/settings_isbn_title"
+            android:summary="@string/settings_isbn_subtitle"
+            android:entries="@array/isbn_options"
+            android:entryValues="@array/isbn_values"
+            android:defaultValue="0"
+            android:icon="@drawable/ic_barcode_settings_tint"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_category_3_title">
+        <Preference
+            android:key="backup_select"
+            android:title="@string/settings_backup_title"
+            android:summary="@string/settings_backup_subtitle_1"
+            android:icon="@drawable/ic_backup_tint"/>
+        <Preference
+            android:key="restore_select"
+            android:title="@string/settings_restore_title"
+            android:summary="@string/settings_restore_subtitle"
+            android:icon="@drawable/ic_restore_tint"/>
+        <Preference
+            android:key="csv_select"
+            android:title="@string/settings_csv_title"
+            android:summary="@string/settings_csv_subtitle"
+            android:icon="@drawable/ic_file_excel_tint"/>
+        <Preference
+            android:key="delete_all"
+            android:title="@string/settings_reset_title"
+            android:summary="@string/settings_reset_subtitle"
+            android:icon="@drawable/ic_delete_tint"/>
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

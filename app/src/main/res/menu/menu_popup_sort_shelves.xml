@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_popup_sort_shelves_timestamp"
+        android:title="@string/action_popup_sort_shelves_timestamp"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_popup_sort_shelves_alpha"
+        android:title="@string/action_popup_sort_shelves_alpha"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_popup_sort_shelves_nbooks"
+        android:title="@string/action_popup_sort_shelves_nbooks"
+        app:showAsAction="ifRoom" />
+
+</menu>

@@ -1,0 +1,337 @@
+<resources>
+    <string name="app_name">My Bookshelf</string>
+    <string name="app_subtitle">Organize your Books</string>
+    <string name="app_version" translatable="false">Ver: %1$s</string>
+
+    <!-- Arrays -->
+    <string-array name="splash_load_text">
+        <item>Loading Books</item>
+        <item>Placing Shelves</item>
+        <item>Removing dust from Shelfs</item>
+        <item>Sitting down Authors</item>
+        <item>Maybe we lost a Book</item>
+        <item>We\'re working on it</item>
+    </string-array>
+
+    <!-- Drawer Nav -->
+    <string name="nav_splash" translatable="false">My Bookshelf</string>
+    <string name="nav_wishlist">Wishlist</string>
+    <string name="nav_genres">Genres</string>
+    <string name="nav_stats">Stats</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Bottom Nav -->
+    <string name="bnav_books">My Books</string>
+    <string name="bnav_authors">Authors</string>
+    <string name="bnav_publishers">Publishers</string>
+    <string name="bnav_shelves">Shelves</string>
+
+    <!---->
+    <string name="nav_details" translatable="false">Details</string>
+    <string name="nav_more" translatable="false">More</string>
+    <string name="nav_barcode_text">Scan the Barcode</string>
+
+    <!-- Toolbar Actions -->
+    <string name="action_search">Search</string>
+    <string name="action_sort">Sort</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_switch_daynight">Night Mode</string>
+    <string name="action_day">Day</string>
+    <string name="action_night">Night</string>
+
+    <!-- Dialog Select Add -->
+    <string name="dialog_select_add_title">What do you want to add?</string>
+    <string name="dialog_select_add_book">Add New Book</string>
+    <string name="dialog_select_add_shelves">Add New Shelves &amp; Shelf</string>
+    <string name="dialog_select_add_wishlist">Add to Wishlist</string>
+
+    <!-- Add Book -->
+    <string name="nav_add_book">Add Book</string>
+    <string name="add_book_wishlist">Add to Wishlist</string>
+    <string name="add_book_required">* Required</string>
+    <string name="add_book_title">Title</string>
+    <string name="add_book_author">Author</string>
+    <string name="add_book_publisher">Publisher</string>
+    <string name="add_book_genre">Genre</string>
+    <string name="add_book_year">Year</string>
+    <string name="add_book_pages">Pages</string>
+    <string name="add_book_lang">Language</string>
+    <string name="add_book_isbn">ISBN</string>
+    <string name="add_book_read_status">Read Status</string>
+    <string name="add_book_descp">Description</string>
+    <string name="add_book_read_status1">Unread</string>
+    <string name="add_book_read_status2">Reading</string>
+    <string name="add_book_read_status3">Readed</string>
+    <string name="add_book_shelves">Shelves</string>
+    <string name="add_book_shelf">Shelf</string>
+    <string name="add_book_error_til">" can\'t be empty"</string>
+    <string name="add_book_error">Some fields can\'t be empty</string>
+    <string name="add_book_saved_ok">%1$s Saved!</string>
+    <string name="add_book_default_value_text">Default</string>
+    <string name="add_book_get_isbn_info_error">No information found for this ISBN</string>
+    <string name="add_book_isbn_help_text">You can search info by ISBN</string>
+    <string name="add_cover_from_foder">Select from folder</string>
+
+    <!-- Add Book ISBN Dialog -->
+    <string name="dialog_select_isbn_title">Select</string>
+    <string name="dialog_select_isbn_op1">Google Books API</string>
+    <string name="dialog_select_isbn_op2">OpenLibrary API</string>
+    <string name="dialog_isbn_search">Searching Info</string>
+
+    <!-- Add Book Menu Top -->
+    <string name="action_add_barcode">Barcode Scanner</string>
+    <string name="action_add_camera">Take Photo</string>
+
+    <!-- Add Shelves -->
+    <string name="nav_add_shelves_title">Add Shelves &amp; Shelf</string>
+    <string name="nav_add_shelves_edit_title">Edit</string>
+    <string name="add_shelves_name">Shelves Name</string>
+    <string name="add_shelves_text_info">Create a new shelves. You can create it without shelf or as many as you want with a limit of 10.</string>
+    <string name="add_shelves_last_title">Last Shelves:</string>
+    <string name="add_shelf_bt">Add Shelf</string>
+    <string name="add_shelf_name">Shelf Name</string>
+    <string name="add_shelf_last_title">Last Shelf:</string>
+    <string name="add_shelves_error_til">" can\'t be empty"</string>
+    <string name="add_shelves_shelf_limit">You can\'t add more shelf</string>
+    <string name="add_shelves_shelves_exists">This Shelves already exists</string>
+    <string name="add_shelves_shelf_exists">This Shelf already exists</string>
+    <string name="add_shelves_added">Shelves and/or Shelf created</string>
+    <string name="add_shelves_edit_edited">Edited</string>
+
+    <!-- Edit Book -->
+    <string name="nav_edit_book">Edit Book</string>
+    <string name="edit_book_error">Some fields can\'t be empty</string>
+    <string name="edit_book_edited">Book edited!</string>
+
+    <!-- Edit Shelves -->
+    <string name="nav_edit_shelves">Edit Shelves/Shelf</string>
+    <string name="edit_shelves_text_info">Edit shelves. If the new shelves name already exists, all the books in the old shelves will move to the new and you need to enter a shelf name.</string>
+    <string name="edit_shelf_text_info">Edit shelf. If the new shelf name already exists, all the books in the old shelf will move to the new one.</string>
+    <string name="edit_shelves_add_shelf">Select or create new shelf to move the books.</string>
+
+    <!-- Book Details -->
+    <string name="book_details_pages_text">"%1$d\nPages"</string>
+    <string name="book_details_isbn_text">ISBN</string>
+    <string name="book_details_more_info">More Info</string>
+    <string name="book_details_rating">Book Rating</string>
+    <string name="book_details_more_author">More from %1$s</string>
+    <string name="book_details_more_publisher">More from %1$s</string>
+    <string name="book_details_more_genre">See more of %1$s</string>
+    <string name="book_details_contextmenu_header">Copy Text</string>
+    <string name="book_details_contextmenu_copy">Copy</string>
+    <string name="book_details_shelves_text">Shelves</string>
+    <string name="book_details_shelf_text">Shelf</string>
+    <string name="book_details_book_fav_text">Book added to Favs</string>
+    <string name="book_details_book_unfav_text">Book deleted from Favs</string>
+
+    <!-- Toolbar Book Details Items -->
+    <string name="action_book_edit">Edit Book</string>
+    <string name="action_book_delete">Detele Book</string>
+
+    <!-- BottomAppBar Book Details Items -->
+    <string name="action_share">Share</string>
+    <string name="action_note">Add Note</string>
+    <string name="action_read" translatable="false">Read</string>
+
+    <!-- Book Details Share -->
+    <string name="book_details_share_title">Share</string>
+    <string name="book_details_share_text">"%1$s\n%2$s\n%3$s\n\n%4$s"</string>
+    <string name="book_details_share_text_isbn">"%1$s\n%2$s\n%3$s\nISBN:&#160;%4$s\n\n%5$s"</string>
+
+    <!-- Book Details Note Dialog -->
+    <string name="book_details_dialog_note_title">Note</string>
+    <string name="book_details_dialog_note_hint">Insert Note</string>
+    <string name="book_details_dialog_note_positive">Save</string>
+    <string name="book_details_dialog_note_negative">Cancel</string>
+    <string name="book_details_dialog_note_saved">Note Saved!</string>
+
+    <!-- Book Details Read Status Popup Menu -->
+    <string name="action_popup_read_status_unread">Unread</string>
+    <string name="action_popup_read_status_reading">Reading</string>
+    <string name="action_popup_read_status_readed">Readed</string>
+
+    <!-- Book Details Delete -->
+    <string name="book_details_dialog_delete_title">Warning!</string>
+    <string name="book_details_dialog_delete_text">Are you sure you want to delete %1$s?</string>
+    <string name="book_details_dialog_delete_positive">Delete</string>
+    <string name="book_details_dialog_delete_negative">Cancel</string>
+    <string name="book_details_dialog_delete_deleted">Book Deleted!</string>
+
+    <!-- Book Details Rating -->
+    <string name="book_details_dialog_rating_text">Rate this Book</string>
+    <string name="book_details_dialog_rating_positive">Rate</string>
+    <string name="book_details_dialog_rating_negative">Cancel</string>
+    <string name="book_details_dialog_rating_updated">Book rated!</string>
+
+    <!-- RecyclerView Info -->
+    <string name="recycler_no_books_text">There are no Books</string>
+    <string name="recycler_no_authors_text">There are no Authors</string>
+    <string name="recycler_no_publishers_text">There are no Publishers</string>
+    <string name="recycler_no_shelves_text">There are no Shelves</string>
+    <string name="recycler_no_books_in_shelves">There are no Books in this Shelves</string>
+    <string name="recycler_no_books_in_shelf">There are no Books in this Shelf</string>
+    <string name="recycler_no_wishlist_text">There are no Books in the Wishlist</string>
+    <string name="recycler_no_genres_text">Add Books to see a list of genres</string>
+
+    <!-- More Fragment -->
+    <string name="action_more_edit">Edit</string>
+    <string name="action_more_delete">Delete</string>
+    <string name="dialog_more_edit_title">Edit %1$s</string>
+    <string name="dialog_more_edit_positive">Save</string>
+    <string name="dialog_more_edit_negative">Cancel</string>
+    <string name="dialog_more_edit_edited">Edited</string>
+    <string name="dialog_more_edit_error">Error: it already exists</string>
+    <string name="dialog_more_delete_title">Warning!</string>
+    <string name="dialog_more_delete_text">If you delete %1$s, the associated books will also be deleted.</string>
+    <string name="dialog_more_delete_positive">Delete</string>
+    <string name="dialog_more_delete_negative">Cancel</string>
+    <string name="dialog_more_delete_deleted">Deleted!</string>
+
+    <!-- Adapters -->
+    <string name="adapter_nbooks">Books: %1$d</string>
+    <string name="adapter_nauthors">Authors: %1$d</string>
+
+    <!-- Popup Menu Sort Books -->
+    <string name="action_popup_sort_last">Last Added</string>
+    <string name="action_popup_sort_alpha">Alphabetically</string>
+    <string name="action_popup_sort_unread">Unreaded</string>
+    <string name="action_popup_sort_reading">Reading</string>
+    <string name="action_popup_sort_readed">Readed</string>
+    <string name="action_popup_sort_favs">Favorites</string>
+    <string name="action_popup_sort_rated">Rated</string>
+
+    <!-- Popup Menu Sort Authors -->
+    <string name="action_popup_sort_authors_alpha">Alphabetically</string>
+    <string name="action_popup_sort_authors_nbooks">Number of Books</string>
+
+    <!-- Popup Menu Sort Publishers -->
+    <string name="action_popup_sort_publishers_alpha">Alphabetically</string>
+    <string name="action_popup_sort_publishers_nbooks">Number of Books</string>
+
+    <!-- Popup Menu Sort Shelves -->
+    <string name="action_popup_sort_shelves_timestamp">Updated</string>
+    <string name="action_popup_sort_shelves_alpha">Alphabetically</string>
+    <string name="action_popup_sort_shelves_nbooks">Number of Books</string>
+
+    <!-- Bottom Sheets -->
+    <string name="bottom_sheet_book_row_action_isbn">Copy ISBN</string>
+    <string name="bottom_sheet_book_row_action_share">Share Book Info</string>
+    <string name="bottom_sheet_book_row_action_delete">Delete Book</string>
+    <string name="bottom_sheet_book_details_descp">Description</string>
+
+    <!-- Dialogs Delete Empty Shelves / Shelf -->
+    <string name="dialog_delete_shelves_title">Warning!</string>
+    <string name="dialog_delete_shelves_text">%1$s is empty. Do you want to delete it?</string>
+    <string name="dialog_delete_shelves_positive">Delete</string>
+    <string name="dialog_delete_shelves_negative">Cancel</string>
+    <string name="dialog_delete_shelves_deleted">Deleted!</string>
+
+    <!-- Transitions -->
+    <string name="transition_row" translatable="false">transitionRow</string>
+    <string name="transition_cover" translatable="false">transitionCover</string>
+    <string name="transition_title" translatable="false">transitionTitle</string>
+    <string name="transition_author" translatable="false">transitionAuthor</string>
+    <string name="transition_publisher" translatable="false">transitionPublisher</string>
+
+    <!-- Permissions -->
+    <string name="dialog_permissions_negative">Cancel</string>
+    <string name="dialog_permissions_ok">All permissions are granted!</string>
+    <string name="dialog_permissions_settings_title">Warning!</string>
+    <string name="dialog_permissions_settings_text">My Bookshelf needs you to accept permissions. Access to storage is required for backup and camera access to read barcodes. If you do not accept the permissions you cannot use this application. You can accept them from the settings.</string>
+    <string name="dialog_permissions_settings_positive">Settings</string>
+
+    <!-- Settings Design -->
+    <string name="settings_category_1_title">Design</string>
+    <string name="settings_theme_title">Select Theme</string>
+    <string name="settings_theme_subtitle">Select the Theme you want.</string>
+    <string name="settings_theme_op1">Day</string>
+    <string name="settings_theme_op2">Night</string>
+    <string name="settings_theme_op3">System Settings</string>
+    <string name="settings_badge_title">Badges</string>
+    <string name="settings_badge_subtitle1">Hide count badges</string>
+    <string name="settings_badge_subtitle2">Show count badges</string>
+    <string name="settings_list_title">Books View Type</string>
+    <string name="settings_list_subtitle1">Show books in list</string>
+    <string name="settings_list_subtitle2">Show books in grid</string>
+    <string name="settings_small_books_title">Books Size</string>
+    <string name="settings_small_books_subtitle1">Show big</string>
+    <string name="settings_small_books_subtitle2">Show small</string>
+    <string name="settings_small_shelves_title">Shelves Size</string>
+    <string name="settings_small_shelves_subtitle1">Show big</string>
+    <string name="settings_small_shelves_subtitle2">Show small</string>
+    <string name="settings_orientation_title">Screen Orientation</string>
+    <string name="settings_orientation_subtitle">Select Screen Orientation</string>
+
+    <!-- Settings ISBN -->
+    <string name="settings_category_2_title">ISBN</string>
+    <string name="settings_isbn_title">ISBN API</string>
+    <string name="settings_isbn_subtitle">Select API for ISBN search</string>
+    <string name="settings_isbn_op1">Select in create/edit</string>
+    <string name="settings_isbn_op2">Google Books API</string>
+    <string name="settings_isbn_op3">OpenLibrary API</string>
+
+    <!-- Settings Data -->
+    <string name="settings_category_3_title">Backup &amp; Data</string>
+    <string name="settings_backup_title">Backup</string>
+    <string name="settings_backup_subtitle_1">Do a backup</string>
+    <string name="settings_backup_done">Backup Done</string>
+    <string name="settings_backup_fail">Backup Failed</string>
+    <string name="settings_restore_title">Restore</string>
+    <string name="settings_restore_subtitle">Restore from backup</string>
+    <string name="settings_restore_check_fail">Select a valid file</string>
+    <string name="settings_restore_check_done">Restore completed</string>
+    <string name="settings_csv_title">CSV File</string>
+    <string name="settings_csv_subtitle">Create a CSV file</string>
+    <string name="settings_csv_done">CSV file created</string>
+    <string name="settings_csv_error">Error creating CSV file</string>
+    <string name="settings_reset_title">Delete All</string>
+    <string name="settings_reset_subtitle">Delete all and reset the DB</string>
+    <string name="settings_dialog_reset_title">Warning!</string>
+    <string name="settings_dialog_reset_message">Are you sure you want to delete all your saved data? (All your Books and Wishlist)</string>
+    <string name="settings_dialog_reset_positive">Delete</string>
+    <string name="settings_dialog_reset_negative">Cancel</string>
+    <string name="settings_dialog_snackbar_reset">All deleted</string>
+
+    <!-- Wishlist -->
+    <string name="nav_add_wishlist">Add to Wishlist</string>
+    <string name="add_wishlist_text_info">Add a book to the Wishlist. When you have it you can pass it to your library.</string>
+    <string name="add_wishlist_title">Title</string>
+    <string name="add_wishlist_author">Author</string>
+    <string name="add_wishlist_no_author">Unknown</string>
+    <string name="add_wishlist_publisher">Publisher</string>
+    <string name="add_wishlist_no_publisher">Unknown</string>
+    <string name="add_wishlist_isbn">ISBN</string>
+    <string name="add_wishlist_error">Some fields can\'t be empty</string>
+    <string name="add_wishlist_saved_ok">%1$s Saved!</string>
+
+    <!-- Wishlist Dialog Menu -->
+    <string name="wishlist_dialog_menu_op1">Add to my Books</string>
+    <string name="wishlist_dialog_menu_op2">Edit</string>
+    <string name="wishlist_dialog_menu_op3">Delete</string>
+
+    <!-- Wishlist Delete -->
+    <string name="wishlist_dialog_delete_title">Warning!</string>
+    <string name="wishlist_dialog_delete_text">Are you sure you want to delete this?</string>
+    <string name="wishlist_dialog_delete_positive">Delete</string>
+    <string name="wishlist_dialog_delete_negative">Cancel</string>
+    <string name="wishlist_dialog_delete_deleted">Book Deleted!</string>
+
+    <!-- Stats -->
+    <string name="stats_nbooks">Total Books: %1$d</string>
+    <string name="stats_nbooks_unread">"Unreaded\n%1$d\n%2$d%%"</string>
+    <string name="stats_nbooks_reading">"Reading\n%1$d\n%2$d%%"</string>
+    <string name="stats_nbooks_readed">"Readed\n%1$d\n%2$d%%"</string>
+    <string name="stats_nbooks_favs">"Favs\n%1$d\n%2$d%%"</string>
+
+    <string name="stats_ngenre_title">Most common Genres</string>
+    <string name="stats_no_genre">Unknow Genre</string>
+
+    <string name="stats_nauthors">Total Authors: %1$d</string>
+    <string name="stats_nauthors_most_books">Authors with most number of books</string>
+    <string name="stats_nauthors_most_readed">Authors with most books read</string>
+
+    <string name="stats_npublishers">Total Publishers: %1$d</string>
+    <string name="stats_npublishers_most_books">Publishers with most number of books</string>
+    <string name="stats_npublishers_most_readed">Publishers with most books read</string>
+
+</resources>

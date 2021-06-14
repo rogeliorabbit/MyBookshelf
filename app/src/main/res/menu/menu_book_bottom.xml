@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_share"
+        android:title="@string/action_share"
+        android:icon="@drawable/ic_share_white"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_read"
+        android:title="@string/action_read"
+        android:icon="@drawable/ic_book_status_unread_white"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_note"
+        android:title="@string/action_note"
+        android:icon="@drawable/ic_notebook_outline_white"
+        app:showAsAction="always" />
+
+</menu>

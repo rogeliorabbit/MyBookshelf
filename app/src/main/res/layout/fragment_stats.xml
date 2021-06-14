@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="?android:attr/dividerHorizontal"
+        android:showDividers="middle">
+
+        <!-- Books -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_nbooks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_book_black"
+                android:drawableTint="@color/colorSecondaryVariant"
+                android:text="# Books"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/colorTextTitle"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:divider="?android:attr/dividerVertical"
+                android:showDividers="middle">
+
+                <TextView
+                    android:id="@+id/tv_nbooks_unread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_book_status_unread_black"
+                    android:drawablePadding="6dp"
+                    android:drawableTint="@color/colorSecondary"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Unread"
+                    android:textColor="@color/colorTextTitle" />
+
+                <TextView
+                    android:id="@+id/tv_nbooks_reading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_book_status_reading_black"
+                    android:drawablePadding="6dp"
+                    android:drawableTint="@color/colorSecondary"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Reading"
+                    android:textColor="@color/colorTextTitle" />
+
+                <TextView
+                    android:id="@+id/tv_nbooks_readed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_book_status_read_black"
+                    android:drawablePadding="6dp"
+                    android:drawableTint="@color/colorSecondary"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Readed"
+                    android:textColor="@color/colorTextTitle" />
+
+                <TextView
+                    android:id="@+id/tv_nbooks_favs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_favorite_black"
+                    android:drawablePadding="6dp"
+                    android:drawableTint="@color/colorPink"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Favs"
+                    android:textColor="@color/colorTextTitle" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Genre -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_ngenre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_tag_text_black"
+                android:drawableTint="@color/colorSecondaryVariant"
+                android:text="@string/stats_ngenre_title"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/colorTextTitle"
+                android:textStyle="bold" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipgroup_genres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Authors -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_nauthors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_author_black"
+                android:drawableTint="@color/colorSecondaryVariant"
+                android:text="# Authors"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/colorTextTitle"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ll_authors_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/tv_nauthors_most_books"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:drawableStart="@drawable/ic_library_books_black"
+                    android:drawablePadding="6dp"
+                    android:drawableTint="@color/colorSecondaryVariant"
+                    android:text="Author with more Books"
+                    android:textColor="@color/colorTextTitle"
+                    android:gravity="center_vertical" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipgroup_author_most_books"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/tv_nauthors_most_readed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:drawableStart="@drawable/ic_book_status_read_black"
+                    android:drawablePadding="6dp"
+                    android:drawableTint="@color/colorSecondaryVariant"
+                    android:text="Author with more Readed Books"
+                    android:textColor="@color/colorTextTitle"
+                    android:gravity="center_vertical" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipgroup_author_most_readed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Publishers -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_npublishers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_publisher_black"
+                android:drawableTint="@color/colorSecondaryVariant"
+                android:text="# Publishers"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/colorTextTitle"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ll_publishers_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/tv_npublishers_most_books"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_library_books_black"
+                    android:drawablePadding="6dp"
+                    android:drawableTint="@color/colorSecondaryVariant"
+                    android:text="Publisher with more Books"
+                    android:textColor="@color/colorTextTitle"
+                    android:layout_margin="6dp"
+                    android:gravity="center_vertical"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chipgroup_publishers_most_books"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                    </com.google.android.material.chip.ChipGroup>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/tv_npublishers_most_readed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_book_status_read_black"
+                    android:drawablePadding="6dp"
+                    android:drawableTint="@color/colorSecondaryVariant"
+                    android:text="Publisher with more Readed Books"
+                    android:textColor="@color/colorTextTitle"
+                    android:layout_margin="6dp"
+                    android:gravity="center_vertical" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp">
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chipgroup_publishers_most_readed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                    </com.google.android.material.chip.ChipGroup>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
